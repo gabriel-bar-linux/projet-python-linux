@@ -1,7 +1,9 @@
 # A4-python-git
 ## Dashboard 
 http://54.174.88.130:8050/
+
 J'ai eu un léger souci lorsque j'avais fini le projet, quelque chose a changé et donc mon code ne tournait plus et j'avais donc une absence de données (d'où le trou dans la courbe).
+Le site sur lequel j'ai scrappé les données a, entre temps, modifié son code source et le prix n'était plus un string mais un float. Donc comme dans mon code initial je convertissais les string en float, ça ne marchait plus.
 ## TD1
 ### Exercice 1
 ```
