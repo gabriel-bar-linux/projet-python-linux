@@ -13,7 +13,8 @@ from datetime import timedelta
 
 # Importer les données et mettre les prix en floatant
 df = pd.read_csv('/home/ec2-user/projet_linux/tableur.csv', header=None, names=['date', 'prix'])
-df['prix'] = df['prix'].apply(lambda x: float(x.replace(" ", "")))
+#df['prix'] = df['prix'].apply(lambda x: float(x.replace(" ", "")))
+df['prix'] = df['prix'].apply(lambda x: float(x.replace(" ", "")) if type(x) == str else x)
 
 # Temporalité (je l'ai enlevé de l'affichage car je n'ai pas réussi à le faire fonctionner)
 granularity_options = [
