@@ -1,6 +1,7 @@
 # A4-python-git
 ## Dashboard 
 http://54.174.88.130:8050/
+J'ai eu un léger souci lorsque j'avais fini le projet, quelque chose a changé et donc mon code ne tournait plus et j'avais donc une absence de données (d'où le trou dans la courbe).
 ## TD1
 ### Exercice 1
 ```
