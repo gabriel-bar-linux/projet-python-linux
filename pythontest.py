@@ -55,13 +55,13 @@ df['date'] = pd.to_datetime(df['date'])
 df['date'] = df['date'] + timedelta(hours=1)
 # Avoir la data sur la journée précédente sur 24h
 now = datetime.datetime.now()
-last_20h = datetime.datetime(now.year, now.month, now.day+1, 20)
+last_20h = datetime.datetime(now.year, now.month, now.day+1, 19)
 now = datetime.datetime.now()
-if now.hour >= 20:
-    last_20h = datetime.datetime(now.year, now.month, now.day, 20)
+if now.hour >= 19:
+    last_20h = datetime.datetime(now.year, now.month, now.day, 19)
 else:
     yesterday = now - datetime.timedelta(days=1)
-    last_20h = datetime.datetime(yesterday.year, yesterday.month, yesterday.day, 20)
+    last_20h = datetime.datetime(yesterday.year, yesterday.month, yesterday.day, 19)
 # Avoir la data sur la journée précédente sur 24h
 start_time = last_20h - datetime.timedelta(hours=24)
 end_time = last_20h
